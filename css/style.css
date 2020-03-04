@@ -1,0 +1,161 @@
+// Margin/padding order top, right, bottom, left
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#side-menu {
+	position: fixed;
+}
+
+.container {
+  margin: 75px 200px 75px 200px;
+  padding: 
+}
+
+#main {
+  position: absolute;
+}
+
+.navbar-header {
+  margin: 0 0 0 20px;
+
+  padding: 11px;
+  color: #f2f2f2;
+  font-family: 'Open Sans';
+}
+
+.sidenav-bottom {
+  font: #000;
+
+}
+#main {
+  background-color: #FFF;
+  transition: 0.5s;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+  font-family: 'Open Sans';
+}
+
+#side-menu {
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  opacity: 0.95;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.navbar {
+  background-color: #353535;
+  overflow: hidden;
+  z-index: 1;
+  height: 55px;
+  padding: 0 0 0 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  font-family: 'Open Sans';
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar ul {
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.navbar a:hover {
+  background-color: grey;
+  color: #000;
+}
+
+/*
+  top: 0px;
+  width: 200px;
+  bottom: 0px;
+  background:orange;
+  height: 100%;
+  opacity: 0.95;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+*/
+
+.side-nav {
+  height: 100%;
+  width: 250px;
+  top: 62px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  font-family: 'Open Sans';
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f2f2f2;
+  display: block;
+  transition: 0.2s;
+}
+
+.side-nav a:hover, .sidelink-active {
+  background-color: grey;
+  border-left-color: #fbc018;
+  border-left-style: solid;
+  color: #000;
+}
+
+.sidenav-head {
+  color: #f2f2f2;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  border-radius: 2px;
+}
+
+th, td {
+  width: 500px;
+
+}
+
+.accounts {
+  width: 300px;
+}
+#exprow1, #exprow3, #exprow5, #exprow7 {
+  background-color: rgb(214, 219, 228);
+}
+
+table, tr, th, td {
+  border: 2px solid #000;
+}
+
+h1, h3 {
+  color: rgb(94, 147, 201);
+}
+
+.img-ex {
+  float: none;
+  box-shadow: 5px 5px 5px lightgrey;
+  margin-right: 20px;
+}
