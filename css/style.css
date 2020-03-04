@@ -54,6 +54,7 @@ body {
 
 .navbar {
   background-color: #353535;
+  display: block;
   overflow: hidden;
   z-index: 1;
   height: 55px;
