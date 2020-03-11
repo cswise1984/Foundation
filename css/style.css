@@ -14,8 +14,14 @@ html {
 	position: fixed;
 }
 
+.page404 {
+  background-image: url("../images/404page.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 .container {
-  background-color: #FFF;
+  /* background-color: #FFF; */
   transition: 0.5s;
   z-index: 1;
   top: 55px;
