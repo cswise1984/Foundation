@@ -13,22 +13,20 @@
 </HEAD>
 
 <body>
-    <h4 class="sidenav-head">Expense Track</h4>
-    <div id="side-menu" class="side-nav">
-        <a class="sidelink-active" href="expense-GL.html">General Ledger</a>
-        <a href="#">Job Costing</a>
-        <a href="#">Accounts Payable</a>
-        <a href="#">Purchase Orders</a>
-        <a href="#">Payroll</a>
-        <a href="#">Equipment</a>
-        <a href="#">Fixed Assets</a>
-        <a href="#">Inventory</a>
-        <a href="#">Service Dispatch</a>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href="expense-index.html" class="sidenav-bottom">Home</a>
-        <a href="#" class="sidenav-bottom">Contact</a>
-    </div>
-  <div id="main">
+  <div id="side-menu" class="side-nav">
+    <a class="sidelink-active" href="expense-GL.html">General Ledger</a>
+    <a href="#">Job Costing</a>
+    <a href="#">Accounts Payable</a>
+    <a href="#">Purchase Orders</a>
+    <a href="#">Payroll</a>
+    <a href="#">Equipment</a>
+    <a href="#">Fixed Assets</a>
+    <a href="#">Inventory</a>
+    <a href="#">Service Dispatch</a>
+    <a href="index.html" class="sidenav-bottom-home">Home</a>
+    <a href="#" class="sidenav-bottom-contact">Contact</a>
+  </div>
+<div id="main">
     <nav class="navbar" id="navbar">
       <a href="#">
         <span class="open-slide">
@@ -41,67 +39,89 @@
       </a>
       <h1 class="navbar-header">CONTINUING DEVELOPMENT: General Ledger</h1>
     </nav>
-  <!-- Beginning of Page Content -->
-<main class="container">
-    <h1>What is “Good” Accounting?</h1>
-    <hr>
-    <p>If we want to have a discussion about how to properly track expenses in Foundation we first need to understand
+    <!-- Beginning of Page Content -->
+    <main class="container">
+      <h1>What is “Good” Accounting?</h1>
+      <hr>
+      <p>If we want to have a discussion about how to properly track expenses in Foundation we first need to understand
         what the distinction between good and bad accounting is. As you may have guessed, the answer isn’t black and
         white. One thing is for sure though, good accounting starts with a good chart of accounts.</p>
-    
-    <h3><img src="./images/exercise.JPG" alt="Exercise" class="img-ex">Exercise: What Makes a Chart of Accounts Good?</h3>
-    <p>Most clients come to Foundation with a chart of accounts that isn’t optimal. They likely
+
+      <div class="exercise"><img src="./images/exercise.JPG" alt="Exercise" class="img-ex">
+        <h3>Exercise: What Makes a Chart of Accounts Good?</h3>
+      </div>
+      <p>Most clients come to Foundation with a chart of accounts that isn’t optimal. They likely
         have accounts that won’t be necessary once they start using Foundation, multiple
         accounts that are tracking the same thing, or accounts that can be removed altogether.
         In this exercise, it will be your job to play the role of the accountant and clean up the
         chart of accounts.</p>
-    <p>Your facilitator will divide you up into groups, provide you with a sample chart of
-        accounts, and give your group time to answer some questions about it. When the time
-        is up, the questions will be reviewed as a class.</p>
-    <p><strong>NOTE:</strong> When answering these questions you don’t need to come up with every answer
+      <p>A few questions to keep in mind as we are taking a looking at a Chart of A ccount’s:
+        <ul>
+          <li>Does the Chart of Accounts have a numbering sequence?</li>
+          <li>What (if any) accounts can you Combine to make the Chart of Accounts cleaned up?</li>
+          <li>What (if any) accounts can you get rid of to make the Chart of Accounts cleaned up?</li>
+        </ul>
+      </p>
+      <p><strong>NOTE:</strong> When answering these questions you don’t need to come up with every answer
         possible. In fact, there isn’t enough space on the page for every answer. The goal here
         is to get you thinking about what makes a good chart of accounts. Be prepared to
         discuss your responses to the questions.</p>
-        <p>When asked to identify an account’s type or number, use the following options:</p>
-        <table>
-            <tr id="exprow1">
-                <th class="accounts">Account Type</th>
-                <th class="accounts">Number</th>
-            </tr>
-            <tr id="exprow2">
-                <td class="accounts">Asset</td>
-                <td class="accounts">1000</td>
-            </tr>
-            <tr id="exprow3">
-                <td class="accounts">Liability</td>
-                <td class="accounts">2000</td>
-            </tr>
-            <tr id="exprow4">
-                <td class="accounts">Equity</td>
-                <td class="accounts">3000</td>
-            </tr>
-            <tr id="exprow5">
-                <td class="accounts">Revenue</td>
-                <td class="accounts">4000</td>
-            </tr>
-            <tr id="exprow6">
-                <td class="accounts">Direct Expense</td>
-                <td class="accounts">5000</td>
-            </tr>
-            <tr id="exprow7">
-                <td class="accounts">Indirect Expense</td>
-                <td class="accounts">6000</td>
-            </tr>
-            <tr id="exprow8">
-                <td class="accounts">Overhead Expense</td>
-                <td class="accounts">7000</td>
-            </tr>
-        </table>
-        <p>1. Which accounts should be combined into a single account? What is the new
-            account name and number?</p>
+      <p>When building or rebuilding a Chart of Accounts a good structure to use would be the following:</p>
+      <table>
+        <tr id="exprow1">
+          <th class="accounts">Account Type</th>
+          <th class="accounts">Number</th>
+        </tr>
+        <tr id="exprow2">
+          <td class="accounts">Asset</td>
+          <td class="accounts">1000</td>
+        </tr>
+        <tr id="exprow3">
+          <td class="accounts">Liability</td>
+          <td class="accounts">2000</td>
+        </tr>
+        <tr id="exprow4">
+          <td class="accounts">Equity</td>
+          <td class="accounts">3000</td>
+        </tr>
+        <tr id="exprow5">
+          <td class="accounts">Revenue</td>
+          <td class="accounts">4000</td>
+        </tr>
+        <tr id="exprow6">
+          <td class="accounts">Direct Expense</td>
+          <td class="accounts">5000</td>
+        </tr>
+        <tr id="exprow7">
+          <td class="accounts">Indirect Expense</td>
+          <td class="accounts">6000</td>
+        </tr>
+        <tr id="exprow8">
+          <td class="accounts">Overhead Expense</td>
+          <td class="accounts">7000</td>
+        </tr>
+      </table>
+      <p>1. Which accounts should be combined into a single account? What is the new
+        account name and number?</p>
+
+    <!-- End of Page Content -->
+<p>A general ledger is a bookkeeping ledger that serves as a central repository for accounting data transferred from all subledgers like accounts payable, accounts receivable, cash management, fixed assets, purchasing and projects. Each account maintained by an organization is known as a ledger account, and the collection of all these accounts is known as the general ledger. The general ledger is the backbone of any accounting system which holds financial and non-financial data for an organization.[1]</p>
+
+<p>An organization's statement of financial position and the statement of income and comprehensive income are both derived from the general ledger.[2] Each account in the general ledger consists of one or more pages. The general ledger is where posting to the accounts occurs. Posting is the process of recording amounts as credits (right side), and amounts as debits (left side), in the pages of the general ledger. Additional columns to the right hold a running activity total (similar to a chequebook).[3]</p>
+  
+<p>The listing of the account names is called the chart of accounts.[4] The extraction of account balances is called a trial balance. The purpose of the trial balance is, at a preliminary stage of the financial statement preparation process, to ensure the equality of the total debits and credits.[5]</p>
+  
+<p>The general ledger should include the date, description and balance or total amount for each account. It is usually divided into at least seven main categories. These categories generally include assets, liabilities, owner's equity, revenue, expenses, gains and losses.[6] The main categories of the general ledger may be further subdivided into subledgers to include additional details of such accounts as cash, accounts receivable, accounts payable, etc.</p>
+  
+<p>Because each bookkeeping entry debits one account and credits another account in an equal amount, the double-entry bookkeeping system helps ensure that the general ledger is always in balance, thus maintaining the accounting equation:</p>
+  
+<p>{\displaystyle {\mbox{Assets}}={\mbox{Liabilities}}+{\mbox{(Shareholders' or Owners' equity)}}}{\displaystyle {\mbox{Assets}}={\mbox{Liabilities}}+{\mbox{(Shareholders' or Owners' equity)}}}.[7][4]</p>
+
+<p>The accounting equation is the mathematical structure of the balance sheet. Although a general ledger appears to be fairly simple, in large or complex organizations or organizations with various subsidiaries, the general ledger can grow to be quite large and take several hours or days to audit or balance.[8][citation needed]</p>
+  
+<p>In a manual or non-computerized system, the general ledger may be a large book. Organizations may instead employ one or more spreadsheets for their ledgers, including the general ledger, or may utilize specialized software to automate ledger entry and handling. When a business uses enterprise resource planning (ERP) software, a financial-features module produces subledgers and the general ledger, with entries drawn from a database that is shared with other processes managed through the ERP.</p>
 </main>
-  <!-- End of Page Content -->
-  </div>
+</div>
 
 
   <script src="./script/script.js"></script>
