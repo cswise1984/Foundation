@@ -10,12 +10,17 @@
   <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.2.min.js"></script>
   <TITLE>Continuing Education</TITLE>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    alert("DOM ready!");
+  });
+  </script>
 </HEAD>
 
 <body>
   <div id="side-menu" class="side-nav">
-    <a href="expense-GL.html">General Ledger</a>
-    <a class="sidelink-active" href="expense-JC.html">Job Costing</a>
+    <a class="sidelink-active" href="expense-GL.html">General Ledger</a>
+    <a href="expense-JC.html">Job Costing</a>
     <a href="expense-AP.html">Accounts Payable</a>
     <a href="expense-PO.html">Purchase Orders</a>
     <a href="expense-PR.html">Payroll</a>
