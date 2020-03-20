@@ -193,3 +193,35 @@ h3 {
   height: 100px;
 }
 
+.tutorial-ex { 
+  float: left;
+  margin-right: 40px;
+  box-shadow: 5px 5px 5px lightgrey;
+  height: 350px;
+  width: 700px;
+}
+/* Margin/padding order top, right, bottom, left */
+
+.email_tutorial {
+  margin: 0 auto;
+}
+form input[type='submit'] {
+    height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #007cba;
+  color: #f2f2f2;
+}
+form input[type='submit']:hover {
+  margin: 0 auto;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #06618f;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+div.submitWrapper  {
+  text-align: center;    
+} 
