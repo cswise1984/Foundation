@@ -50,7 +50,7 @@ html {
   transition: 0.5s;
   z-index: 1;
   top: 0px;
-  left: 0px;
+  left: 250px;
   right: 0px;
   bottom: 0px;
   font-family: 'Open Sans';
@@ -80,7 +80,7 @@ html {
   font-family: 'Open Sans';
 }
 
-.navbar a {
+.navbar span {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -95,9 +95,26 @@ html {
   list-style: none;
 }
 
-.navbar a:hover {
+.navbar span:hover {
   background-color: grey;
   color: #000;
+  cursor: pointer;
+}
+
+.side-nav span {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.side-nav span:hover {
+  background-color: grey;
+  color: #000;
+  cursor: pointer;
 }
 
 .side-nav {
@@ -130,6 +147,10 @@ html {
 
 .sidenav-head {
   color: #f2f2f2;
+}
+
+.side-menu-container {
+  padding-top: 55px;
 }
 
 .sidenav-bottom-contact {

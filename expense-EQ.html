@@ -14,30 +14,36 @@
 
 <body>
   <div id="side-menu" class="side-nav">
-    <a href="expense-GL.html">General Ledger</a>
-    <a href="expense-JC.html">Job Costing</a>
-    <a href="expense-AP.html">Accounts Payable</a>
-    <a href="expense-PO.html">Purchase Orders</a>
-    <a href="expense-PR.html">Payroll</a>
-    <a class="sidelink-active" href="expense-EQ.html">Equipment</a>
-    <a href="expense-FA.html">Fixed Assets</a>
-    <a href="expense-IN.html">Inventory</a>
-    <a href="expense-SD.html">Service Dispatch</a>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <a href="expense-index.html" class="sidenav-bottom">Home</a>
-    <a href="#" class="sidenav-bottom">Contact</a>
+    <span class="closebtn" onclick="javascript: closeNav()">
+      <svg width="30" height="30">
+        <path d="M0,0 30,30" stroke="#fbc018" stroke-width="5" />
+        <path d="M0,30 30,0" stroke="#fbc018" stroke-width="5" />
+      </svg>
+    </span>
+    <div class="side-menu-container">
+      <a href="expense-GL.html">General Ledger</a>
+      <a class="sidelink-active" href="expense-JC.html">Job Costing</a>
+      <a href="expense-AP.html">Accounts Payable</a>
+      <a href="expense-PO.html">Purchase Orders</a>
+      <a href="expense-PR.html">Payroll</a>
+      <a href="expense-EQ.html">Equipment</a>
+      <a href="expense-FA.html">Fixed Assets</a>
+      <a href="expense-IN.html">Inventory</a>
+      <a href="expense-SD.html">Service Dispatch</a>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <a href="expense-index.html" class="sidenav-bottom">Home</a>
+      <a href="#" class="sidenav-bottom">Contact</a>
+    </div>
   </div>
   <div id="main">
     <nav class="navbar" id="navbar">
-      <a href="#">
-        <span class="open-slide">
+      <span class="open-slide" onclick="javascript: toggleContent()">
           <svg width="30" height="30">
             <path d="M0,8 30,8" stroke="#fbc018" stroke-width="5" />
             <path d="M0,18 30,18" stroke="#fbc018" stroke-width="5" />
             <path d="M0,28 30,28" stroke="#fbc018" stroke-width="5" />
           </svg>
         </span>
-      </a>
       <h1 class="navbar-header">CONTINUING DEVELOPMENT: Equipment</h1>
     </nav>
   <!-- Beginning of Page Content -->
