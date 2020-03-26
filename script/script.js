@@ -8,12 +8,20 @@ $('span').toggle(
 
 function jcQuestion1() {
   var body = "1: What cost codes would you create? \n" + document.getElementById("q1text").value + "\n\n";
-  body += "2: When recording expense related transactions, what cost classes would you use? \n" + document.getElementById("q2text").value + "\n\n";
-  body += "3: If you decided to budget this job, what would it look like? \n" + document.getElementById("q3text").value + "\n\n";
-  body += "4. What is the total cost to make this cake? How would you determine this? \n" + document.getElementById("q4text").value + "\n\n";
-  body += "5. If you were looking to make a profit, how much would you charge your friend for the cake? How would you determine this amount? \n" + document.getElementById("q5text").value + "\n\n";
+      body += "2: When recording expense related transactions, what cost classes would you use? \n" + document.getElementById("q2text").value + "\n\n";
+      body += "3: If you decided to budget this job, what would it look like? \n" + document.getElementById("q3text").value + "\n\n";
+      body += "4. What is the total cost to make this cake? How would you determine this? \n" + document.getElementById("q4text").value + "\n\n";
+      body += "5. If you were looking to make a profit, how much would you charge your friend for the cake? How would you determine this amount? \n" + document.getElementById("q5text").value + "\n\n";
   var email = document.getElementById("facilitator").value;
   var location = "mailto:" + email + "?subject=J/C Questions" + "&body=" + encodeURIComponent(body);
+  window.location.href = location;
+}
+
+function contactMe() {
+  var body = "Hello Education Department, \n\n";
+      body += "Thought that can help Continuing Development: \n" + document.getElementById("emailText").value + "\n\n";
+      body += "Thank you! \n\n";
+  var location = "mailto:cpk@foundationsoft.com" + "?subject=Continuing Education: " + document.getElementById("subject").value + "&body=" + encodeURIComponent(body);
   window.location.href = location;
 }
 
@@ -82,6 +90,28 @@ var p2 = "<h1>Scenario: Lets make a cake!</h1>";
     p2 += "</form>";
     p2 += "<br><br><br><br><br><br><br><br><br>";
 
+var home = "<h1>A Work in Progress</h1>";
+    home += "<p>This is our first time implementing an extended development program outside of new hire training. Like anything else, it will take a lot of time and effort to make this program great, and the program you’re participating in is new.</p>";
+    home += "<p>In implementing this program we’re doing our best to balance a lot of factors like keeping class sizes small and making sure that clients are still served while we educate our staff. However, we plan to continuously improve this program. We may occasionally ask you for feedback on the effectiveness of this program though an anonymous survey, but we’re open to receiving feedback from you at any point in time. Please feel free to send any feedback on these programs to <a href=\"mailto:cpk@foundationsoft.com?subject=Continuing%20Education:%20Feedback\">Chris Kundmueller</a>.</p>";
+
+var contact = "<div class=\"contactEmail-container\">";
+    contact += "<h1>Contact Education</h1>";
+    contact += "<hr>";
+    contact += "<!-- <form method=\"post\" name=\"emailform\" action=\"action_page.php\"> -->";
+    contact += "<form class=\"contactEmail-form\" method=\"post\" action=\"javascript: contactMe()\" class=\"contactme\" enctype=\"text/plain\">";
+    contact += "<label for=\"name\"><strong>Name</strong></label><br>";
+    contact += "<input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your name\" style=\"width: 520px;\"><br>";
+    contact += "<br>";
+    contact += "<label for=\"subject\"><strong>Subject:</strong></label><br>";
+    contact += "<input type=\"text\" id=\"subject\" name=\"subject\" placeholder=\"Subject\" style=\"width: 520px;\"><br>";
+    contact += "<br>";
+    contact += "<label for=\"body\"><strong>Thoughts:</strong></label><br>";
+    contact += "<textarea id=\"emailText\" name=\"body\" placeholder=\"Tell us what you are thinking\" style=\"height: 300px; width: 520px;\"></textarea><br>";
+    contact += "<div class=\'submitWrapper\'>";
+    contact += "<input type=\"submit\" value=\"Submit\">";
+    contact += "<input type=\"reset\" value=\"Reset\">";
+    contact += "</form>";
+    contact += "</div>"
 
 $("#changeEmail").click(function () {
   $('.container').html(p1);
@@ -89,6 +119,9 @@ $("#changeEmail").click(function () {
 $("#jcExercise").click(function () {
   $(".container").html(p2);
 });
-$("#three").click(function () {
-  $(".container").html(p3);
+$("#home").click(function () {
+  $(".container").html(home);
+});
+$("#contact").click(function () {
+  $(".container").html(contact);
 });

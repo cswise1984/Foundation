@@ -31,7 +31,7 @@ html {
   font-family: 'Open Sans';
   position: absolute;
   overflow-y: auto;
-  padding: 0 150px 0 150px;
+  padding: 0 125px 0 125px;
 }
 
 .navbar-header {
@@ -229,7 +229,7 @@ h3 {
 }
 
 form input[type='submit'] {
-    height: 50px;
+  height: 50px;
   width: 120px;
   border-radius: 8px;
   background-color: #007cba;
@@ -244,7 +244,39 @@ form input[type='submit']:hover {
   color: #f2f2f2;
   cursor: pointer;
 }
+form input[type='reset'] {
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #007cba;
+  color: #f2f2f2;
+}
+
+form input[type='reset']:hover {
+  margin: 0 auto;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #06618f;
+  color: #f2f2f2;
+  cursor: pointer;
+}
 
 div.submitWrapper  {
   text-align: center;    
 } 
+
+.contactEmail-container, .contactEmail-form {
+  /* background-color: #FFF; */
+  transition: 0.5s;
+  z-index: 1;
+  top: 55px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-family: 'Open Sans';
+  overflow-y: none;
+  width: 525px;
+  margin-left: auto;
+  margin-right: auto;
+}
