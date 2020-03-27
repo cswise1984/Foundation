@@ -31,7 +31,7 @@ html {
   font-family: 'Open Sans';
   position: absolute;
   overflow-y: auto;
-  padding: 0 125px 0 125px;
+  padding: 0 75px 0 75px;
 }
 
 .navbar-header {
@@ -47,7 +47,7 @@ html {
 }
 #main {
   background-color: #FFF;
-  transition: 0.5s;
+  transition: 0.2s;
   z-index: 1;
   top: 0px;
   left: 250px;
@@ -191,6 +191,15 @@ table, tr, th, td {
 h1, h3 {
   color: rgb(94, 147, 201);
 }
+
+.csicodes-table, .csicodes {
+  padding: 0 0 20px 0;
+}
+.csicodes-table {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
 
 h3 {
   padding-top: 20px;
