@@ -17,6 +17,14 @@ function jcQuestion1() {
   window.location.href = location;
 }
 
+function deckQuestion1() {
+  var body = "1. Questions to Ask: \n\n" + document.getElementById("q1text").value + "\n\n";
+      body += "2. Resources for Pricing: \n\n" + document.getElementById("q2text").value + "\n\n";
+  var email = document.getElementById("facilitator").value;
+  var location = "mailto:" + email + "?subject=Deck Questions" + "&body=" + encodeURIComponent(body);
+  window.location.href = location;
+}
+
 function contactMe() {
   var body = "Hello Education Department, \n\n";
       body += "Thought that can help Continuing Development: \n" + document.getElementById("emailText").value + "\n\n";
@@ -48,7 +56,7 @@ var p1 = "<h1>Change your Default email Application</h1>";
     p1 += "<h3>Test your Skills</h3>";
     p1 += "</div>";
     p1 += "<form method=\"post\" enctype=\"text/plain\" name=\"form\" action =\"mailto:ENTER YOUR FACILITATOR EMAIL ADDRESS?subject=I%20changed%20my%20default%20email%20program\">";
-    p1 += "<p>Click on the Button to test your email application. Make sure that you change the to address to be your Facilitator's email address(for Joe Wise \"jcw@foundationsoft.com\" for Christopher Wise \"csw@foundationsoft.com\")</p>";
+    p1 += "<p>Click on the Button to test your email application. Make sure that you change the to address to be your Facilitator's email address (for Joe Wise \"jcw@foundationsoft.com\" for Christopher Wise \"csw@foundationsoft.com\")</p>";
     p1 += "<div class='submitWrapper'>";
     p1 += "<input value=\"Test Email\" type=\"submit\" class=\"quizSubmit\">";
     p1 += "</div>";
@@ -113,6 +121,97 @@ var contact = "<div class=\"contactEmail-container\">";
     contact += "</form>";
     contact += "</div>"
 
+var jc ="<h1>What does Job Costing accomplish?</h1>";
+    jc += "<p>When a good job costing structure is in place, it allows the Owners, Managers, Project Managers and Supervisors to closely track a project’s progress, profitability and schedule. This is done by breaking a project into manageable parts. These are the tasks within a project. Most of our clients self perform most of these tasks. Some of our clients Subcontract the tasks to other companies. Some costs associated with a project are overhead or cost of doing business.</p>";
+    jc += "<div class=\"exercise\"><img src=\"./images/exercise.JPG\" alt=\"Exercise\" class=\"img-ex\">";
+    jc += "<h3>How can a Project be broken down into manageable parts?</h3>";
+    jc += "</div>";
+    jc += "<p>When a job or project is awarded, there is the job as a whole. It can be determined that the job is profitable or not. This is crucial to the life of the company. In many instances, the job is broken down into tasks or cost codes. Many General Contractors use what is know as the CSI (Construction Standard Industry) Codes. These are broken down into groups or Divisions. These should not be confused with financial divisions in Foundation Software. They are nothing more that groupings for sorting basic parts of the project. </p>";
+    jc += "<h3>CSI Cost Code Breakdown</h3><br>";
+    jc += "<div class=\"csicodes\">";
+    jc += "<table class=\"csicodes-table\">";
+    jc += "<tr>";
+    jc += "<td colspan=\"2\" style=\"text-align: center;\"><strong>CSI Divisions</strong></td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow1\">";
+    jc += "<td class=\"accounts\">1000-General Requirements</td>";
+    jc += "<td class=\"accounts\">9000-Finishes</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow2\">";
+    jc += "<td class=\"accounts\">2000-Sitework</td>";
+    jc += "<td class=\"accounts\">10000-Specialties</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow3\">";
+    jc += "<td class=\"accounts\">3000-Concrete</td>";
+    jc += "<td class=\"accounts\">11000-Equipment</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow4\">";
+    jc += "<td class=\"accounts\">4000-Masonry</td>";
+    jc += "<td class=\"accounts\">12000-Furnishings</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow5\">";
+    jc += "<td class=\"accounts\">5000-Metal</td>";
+    jc += "<td class=\"accounts\">13000-Special Construction</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow6\">";
+    jc += "<td class=\"accounts\">6000-Woods and Plastics</td>";
+    jc += "<td class=\"accounts\">14000-Conveying Systems</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow7\">";
+    jc += "<td class=\"accounts\">7000-Thermal and Moisture Protection</td>";
+    jc += "<td class=\"accounts\">15000-Mechanical</td>";
+    jc += "</tr>";
+    jc += "<tr id=\"exprow8\">";
+    jc += "<td class=\"accounts\">8000-Doors and Windows</td>";
+    jc += "<td class=\"accounts\">16000-Electrical</td>";
+    jc += "</tr>";
+    jc += "</table>";
+    jc += "<p>The CSI Code Structure is broken down into Divisions (Cost Code Groups in Foundation).</p>";
+    jc += "<p>Under Each of the Divisions listed to the right, there are a number of cost codes associated with those.</p>";
+    jc += "<p>Not every Construction Company uses this format and will establish their own guidelines that they want to use. Foundation Software allows for various types of job costing based on the client needs and wants.</p>";
+    jc += "<p>In most instances Owners, PM’s, Management and Superintendents like more detail of the costs of the project. Most will break the cost into more manageable areas such as Labor, Materials, Subcontract, Rented Equipment, Other Costs. Within Foundation Software we have these as predefined cost classes.</p>";
+    jc += "<p><a href=\"./Exercises/CSI Codes.pdf\" download=\"CSI Codes\">Click Here</a> for an example that will show the Division and Cost Code structure.</p>";
+    jc += "</div>";
+    jc += "<br>";
+    jc += "<div class=\"exercise\"><img src=\"./images/exercise.JPG\" alt=\"Exercise\" class=\"img-ex\">";
+    jc += "<h3>How can I get even more detail?</h3>";
+    jc += "</div>";
+    jc += "<p>A common question arises to how can we track the different parts or areas of a project? Simple…..Phase the Job. This will give another level of detail to Job Cost Reporting.</p>";
+    jc += "<p>What is a Phase? Simply put, a phase is a Job within a Job, if a company wants to break a large or major project into smaller projects they will phase a project. Some examples of phases are:</p>";
+    jc += "<ul>";
+    jc += "<li>Floors in a hotel or hospital</li>";
+    jc += "<li>Lots in a subdivision</li>";
+    jc += "<li>Buildings on a campus</li>";
+    jc += "<li>Wings of a building</li>";
+    jc += "</ul>";
+    jc += "<p>There is a simple hierarchy for using phases. If we are dividing a project into the phases or mini projects, the breakdown is:</p>";
+    jc += "<ol>";
+    jc += "<li>Project (Job)</li>";
+    jc += "<li>Job within a Project (Phase)</li>";
+    jc += "<li>Task within the Phase (Cost Code)</li>";
+    jc += "<li>Type of cost within the Cost Code (Cost Class)</li>";
+    jc += "</ol>";
+    jc += "<div class=\"exercise\"><img src=\"./images/scenario.jpg\" alt=\"Exercise\" class=\"img-ex\">";
+    jc += "<h3>Practical Application</h3>";
+    jc += "</div>";
+    jc += "<form method=\"post\" enctype=\"text/plain\" name=\"form\" action=\"javascript: deckQuestion1()\">";
+    jc += "<strong>Please Choose your Facilitator:</strong><br>";
+    jc += "<select name=\"1\" name=\"facilitator\" id=\"facilitator\" style=\"width: 250px\">";
+    jc += "<option value=\"\"> Select</option>";
+    jc += "<option value=\"csw@foundationsoft.com\"> Christopher Wise </option>";
+    jc += "<option value=\"jcw@foundationsoft.com\"> Joseph Wise </option>";
+    jc += "<option value=\"cpk@foundationsoft.com\"> Chris Kundmueller </option>";
+    jc += "</select>";
+    jc += "<h3></h3>";
+    jc += "<p>What questions would you need to ask?<br>";
+    jc += "<textarea type=\"text\" name=\"Questions\" placeholder=\"(Enter your questions here)\" id=\"q1text\" class=\"answer\" rows=\"6\"></textarea></p>";
+    jc += "<p>What resources are available to you to price a deck?<br>";
+    jc += "<textarea type=\"text\" name=\"Pricing resources\" placeholder=\"(Enter your resources here)\" id=\"q2text\" class=\"answer\" rows=\"6\"></textarea></p>";
+    jc += "<div class='submitWrapper'>";
+    jc += "<input value=\"Submit\" type=\"submit\" class=\"quizSubmit\">";
+    jc += "</div>";
+    jc += "<br><br><br><br><br><br><br>";
+
 $("#changeEmail").click(function () {
   $('.container').html(p1);
 });
@@ -124,4 +223,7 @@ $("#home").click(function () {
 });
 $("#contact").click(function () {
   $(".container").html(contact);
+});
+$("#jobCost").click(function () {
+  $(".container").html(jc);
 });
