@@ -14,34 +14,114 @@
 
 <body>
   <div id="side-menu" class="side-nav">
-    <a href="expense-GL.html">General Ledger</a>
-    <a href="expense-JC.html">Job Costing</a>
-    <a href="#">Accounts Payable</a>
-    <a href="#">Purchase Orders</a>
-    <a href="#">Payroll</a>
-    <a href="#">Equipment</a>
-    <a href="#">Fixed Assets</a>
-    <a href="#">Inventory</a>
-    <a href="#">Service Dispatch</a>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <a href="index.html" class="sidenav-bottom">Home</a>
-    <a href="#" class="sidenav-bottom">Contact</a>
+    <a id="changeEmail" href="#">Change Email</a>
+    <a id="jcExercise" href="#">Job Costing Exercise</a>
+    <a id="home" href="#" class="sidenav-bottom-home">Home</a>
+    <a id="contact" href="#" class="sidenav-bottom-contact">Contact</a>
   </div>
   <div id="main">
     <nav class="navbar" id="navbar">
-        <span class="open-slide" onclick="javascript: toggleContent()">
+        <span class="open-slide">
           <svg width="30" height="30">
             <path d="M0,8 30,8" stroke="#fbc018" stroke-width="5" />
             <path d="M0,18 30,18" stroke="#fbc018" stroke-width="5" />
             <path d="M0,28 30,28" stroke="#fbc018" stroke-width="5" />
           </svg>
         </span>
-      <h1 class="navbar-header">CONTINUING DEVELOPMENT: (place track name and section here)</h1>
+      <h1 class="navbar-header">CONTINUING DEVELOPMENT</h1>
     </nav>
   <!-- Beginning of Page Content -->
   <main class="container">
-
-
+    <h1>What does Job Costing accomplish?</h1>
+    <p>When a good job costing structure is in place, it allows the Owners, Managers, Project Managers and Supervisors to closely track a project’s progress, profitability and schedule. This is done by breaking a project into manageable parts. These are the tasks within a project. Most of our clients self perform most of these tasks. Some of our clients Subcontract the tasks to other companies. Some costs associated with a project are overhead or cost of doing business.</p>
+    <div class="exercise"><img src="./images/exercise.JPG" alt="Exercise" class="img-ex">
+      <h3>How can a Project be broken down into manageable parts?</h3>
+    </div>
+    <p>When a job or project is awarded, there is the job as a whole. It can be determined that the job is profitable or not. This is crucial to the life of the company. In many instances, the job is broken down into tasks or cost codes. Many General Contractors use what is know as the CSI (Construction Standard Industry) Codes. These are broken down into groups or Divisions. These should not be confused with financial divisions in Foundation Software. They are nothing more that groupings for sorting basic parts of the project. </p>
+    <h3>CSI Cost Code Breakdown</h3><br>
+    <div class="csicodes">
+    <table class="csicodes-table">
+      <tr>
+        <td colspan="2" style="text-align: center;"><strong>CSI Divisions</strong></td>
+      </tr>
+      <tr id="exprow1">
+        <td class="accounts">1000-General Requirements</td>
+        <td class="accounts">9000-Finishes</td>
+      </tr>
+      <tr id="exprow2">
+        <td class="accounts">2000-Sitework</td>
+        <td class="accounts">10000-Specialties</td>
+      </tr>
+      <tr id="exprow3">
+        <td class="accounts">3000-Concrete</td>
+        <td class="accounts">11000-Equipment</td>
+      </tr>
+      <tr id="exprow4">
+        <td class="accounts">4000-Masonry</td>
+        <td class="accounts">12000-Furnishings</td>
+      </tr>
+      <tr id="exprow5">
+        <td class="accounts">5000-Metal</td>
+        <td class="accounts">13000-Special Construction</td>
+      </tr>
+      <tr id="exprow6">
+        <td class="accounts">6000-Woods and Plastics</td>
+        <td class="accounts">14000-Conveying Systems</td>
+      </tr>
+      <tr id="exprow7">
+        <td class="accounts">7000-Thermal and Moisture Protection</td>
+        <td class="accounts">15000-Mechanical</td>
+      </tr>
+      <tr id="exprow8">
+        <td class="accounts">8000-Doors and Windows</td>
+        <td class="accounts">16000-Electrical</td>
+      </tr>
+    </table>
+    <p>The CSI Code Structure is broken down into Divisions (Cost Code Groups in Foundation).</p>
+    <p>Under Each of the Divisions listed to the right, there are a number of cost codes associated with those.</p>
+    <p>Not every Construction Company uses this format and will establish their own guidelines that they want to use. Foundation Software allows for various types of job costing based on the client needs and wants.</p>
+    <p>In most instances Owners, PM’s, Management and Superintendents like more detail of the costs of the project. Most will break the cost into more manageable areas such as Labor, Materials, Subcontract, Rented Equipment, Other Costs. Within Foundation Software we have these as predefined cost classes.</p>
+    <p><a href="./Exercises/CSI Codes.pdf" download="CSI Codes">Here</a> is an example that will show the Division and Cost Code structure.</p>
+  </div>
+  <br>
+  <div class="exercise"><img src="./images/exercise.JPG" alt="Exercise" class="img-ex">
+    <h3>How can I get even more detail?</h3>
+  </div>
+  <p>A common question arises to how can we track the different parts or areas of a project? Simple…..Phase the Job. This will give another level of detail to Job Cost Reporting.</p>
+  <p>What is a Phase? Simply put, a phase is a Job within a Job, if a company wants to break a large or major project into smaller projects they will phase a project. Some examples of phases are:</p>
+  <ul>
+    <li>Floors in a hotel or hospital</li>
+    <li>Lots in a subdivision</li>
+    <li>Buildings on a campus</li>
+    <li>Wings of a building</li>
+  </ul>
+  <p>There is a simple hierarchy for using phases. If we are dividing a project into the phases or mini projects, the breakdown is:</p>
+  <ol>
+    <li>Project (Job)</li>
+    <li>Job within a Project (Phase)</li>
+    <li>Task within the Phase (Cost Code)</li>
+    <li>Type of cost within the Cost Code (Cost Class)</li>
+  </ol>
+  <div class="exercise"><img src="./images/scenario.jpg" alt="Exercise" class="img-ex">
+    <h3>Practical Application</h3>
+  </div>
+  <form method="post" enctype="text/plain" name="form" action="javascript: deckQuestion1()">
+    <strong>Please Choose your Facilitator:</strong><br>
+    <select name="1" name="facilitator" id="facilitator" style="width: 250px">
+    <option value=""> Select</option>
+    <option value="csw@foundationsoft.com"> Christopher Wise </option>
+    <option value="jcw@foundationsoft.com"> Joseph Wise </option>
+    <option value="cpk@foundationsoft.com"> Chris Kundmueller </option>
+    </select>
+  <h3></h3>
+  <p>What questions would you need to ask?<br>
+  <textarea type="text" name="Questions" placeholder="(Enter your questions here)" id="q1text" class="answer" rows="6"></textarea></p>
+  <p>What resources are available to you to price a deck?<br>
+  <textarea type="text" name="Pricing resources" placeholder="(Enter your resources here)" id="q2text" class="answer" rows="6"></textarea></p>
+  <div class='submitWrapper'>
+  <input value="Submit" type="submit" class="quizSubmit">
+  </div>
+  <br><br><br><br><br><br><br>
   </main>
   <!-- End of Page Content -->
   </div>
