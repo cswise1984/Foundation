@@ -302,7 +302,7 @@ var gl = "<h1>What is \"Good\" Accounting?</h1>";
     gl += "<td class=\"accounts\">8000+</td>";
     gl += "</tr>";
     gl += "</table>";
-    gl += "<br><br><br><br><br><br><br>";
+    gl += "<br><br><br><br><br><br>";
 
 $("#changeEmail").click(function () {
   $('.container').html(p1);
